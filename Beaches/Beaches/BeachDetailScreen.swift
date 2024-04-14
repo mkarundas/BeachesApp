@@ -9,12 +9,20 @@ import SwiftUI
 
 struct BeachDetailScreen: View {
     
+    @State private var zoomed: Bool = false
+    
     let beach: Beach
     
     var body: some View {
         VStack {
             Image(beach.photo)
                 .resizable()
+                .aspectRatio(contentMode: zoomed ? .fill: .fit)
+                .onTapGesture {
+                    withAnimation {
+                        zoomed.toggle()
+                    }
+                }
             Text(beach.country)
                 .font(.title2)
             Text(beach.info)
