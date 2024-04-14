@@ -12,6 +12,7 @@
 		4C3AADD12BCBC1CC001FD4D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AADD02BCBC1CC001FD4D1 /* Assets.xcassets */; };
 		4C3AADD42BCBC1CD001FD4D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AADD32BCBC1CD001FD4D1 /* Preview Assets.xcassets */; };
 		4C3AADDC2BCBC2DA001FD4D1 /* Beach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AADDB2BCBC2DA001FD4D1 /* Beach.swift */; };
+		4C3AADDE2BCBC6A0001FD4D1 /* BeachDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AADDD2BCBC6A0001FD4D1 /* BeachDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		4C3AADD02BCBC1CC001FD4D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C3AADD32BCBC1CD001FD4D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4C3AADDB2BCBC2DA001FD4D1 /* Beach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beach.swift; sourceTree = "<group>"; };
+		4C3AADDD2BCBC6A0001FD4D1 /* BeachDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				4C3AADDA2BCBC2C7001FD4D1 /* Models */,
 				4C3AADCC2BCBC1CB001FD4D1 /* BeachesApp.swift */,
 				4C3AADCE2BCBC1CB001FD4D1 /* ContentView.swift */,
+				4C3AADDD2BCBC6A0001FD4D1 /* BeachDetailScreen.swift */,
 				4C3AADD02BCBC1CC001FD4D1 /* Assets.xcassets */,
 				4C3AADD22BCBC1CD001FD4D1 /* Preview Content */,
 			);
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3AADDE2BCBC6A0001FD4D1 /* BeachDetailScreen.swift in Sources */,
 				4C3AADCF2BCBC1CB001FD4D1 /* ContentView.swift in Sources */,
 				4C3AADCD2BCBC1CB001FD4D1 /* BeachesApp.swift in Sources */,
 				4C3AADDC2BCBC2DA001FD4D1 /* Beach.swift in Sources */,

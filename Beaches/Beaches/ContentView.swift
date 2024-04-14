@@ -16,8 +16,16 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        List(beaches) { beach in
-            BeachCellView(beach: beach)
+        NavigationStack {
+            List(beaches) { beach in
+                NavigationLink(value: beach) {
+                    BeachCellView(beach: beach)
+                }
+            }
+            .navigationTitle("Beaches")
+            .navigationDestination(for: Beach.self) { beach in
+                BeachDetailScreen()
+            }
         }
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Beach: Identifiable {
+struct Beach: Identifiable, Hashable {
     let id = UUID()
     let name: String
     let photo: String
