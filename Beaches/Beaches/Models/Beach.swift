@@ -8,7 +8,8 @@
 import Foundation
 
 
-struct Beach {
+struct Beach: Identifiable {
+    let id = UUID()
     let name: String
     let photo: String
     let country: String
