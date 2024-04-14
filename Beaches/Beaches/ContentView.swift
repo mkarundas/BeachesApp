@@ -17,23 +17,30 @@ struct ContentView: View {
     
     var body: some View {
         List(beaches) { beach in
-            HStack {
-                Image(beach.photo)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .clipShape(RoundedRectangle(cornerRadius: 10, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
-                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                VStack(alignment: .leading) {
-                    Text(beach.name)
-                        .font(.title3)
-                    Text(beach.country)
-                        .font(.subheadline)
-                }
-            }
+            BeachCellView(beach: beach)
         }
     }
 }
 
 #Preview {
     ContentView()
+}
+
+struct BeachCellView: View {
+    let beach: Beach
+    var body: some View {
+        HStack {
+            Image(beach.photo)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipShape(RoundedRectangle(cornerRadius: 10, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+            VStack(alignment: .leading) {
+                Text(beach.name)
+                    .font(.title3)
+                Text(beach.country)
+                    .font(.subheadline)
+            }
+        }
+    }
 }
