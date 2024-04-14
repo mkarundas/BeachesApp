@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct BeachDetailScreen: View {
+    
+    let beach: Beach
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(beach.photo)
+                .resizable()
+            Text(beach.country)
+                .font(.title2)
+            Text(beach.info)
+                .font(.title3)
+            Spacer()
+        }
+        .navigationTitle(beach.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    BeachDetailScreen()
+    BeachDetailScreen(beach: Beach(name: "Lucky Bay", photo: "lucky", country: "Australia", info: "Lucky Bay is a bay located at 33°59′40″S 122°13′57″E on the south coast of Western Australia, in the Cape Le Grand National Park."))
 }

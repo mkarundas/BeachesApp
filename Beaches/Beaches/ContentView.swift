@@ -24,7 +24,7 @@ struct ContentView: View {
             }
             .navigationTitle("Beaches")
             .navigationDestination(for: Beach.self) { beach in
-                BeachDetailScreen()
+                BeachDetailScreen(beach: beach)
             }
         }
     }
